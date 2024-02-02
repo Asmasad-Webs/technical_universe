@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="indexxx.css">
+    <style>
+        body {
+    margin:0px;
+    background-color: lightcyan;
+    font-family:'Trebuchet MS';
+}
+
+.head {
+    background-image: linear-gradient(blue, orange);
+    padding:0px;
+    font-size:30px;
+    width: 100%;
+    color:cyan;
+    text-shadow:2px -2px 1px darkblue;
+}
+
+.h_image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    padding:15px;
+}
+
+.about h3 {
+    background-color:white;
+    box-shadow: 0px 0px 4px blue;
+    border-radius:10px;
+    padding: 10px;
+    width: 350px;
+    margin-top: -5px;
+    margin-bottom: 9px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.services {
+    display: flex;
+    font-size: 15px;
+    color:darkblue;
+    justify-content: space-evenly;
+}
+
+
+.cc1 {
+    width:500px;
+    border-radius: 20px;
+    display:flex;
+    background-color: white;
+    justify-content:space-evenly;
+    box-shadow: 0px 0px 10px darkblue;
+}
+
+.cc2 {
+    width: 500px;
+    border-radius: 20px;
+    display:flex;
+    background-color:white;
+    justify-content:space-evenly;
+    box-shadow: 0px 0px 10px darkblue;
+}
+
+
+.a_account a h3 {
+    color:white;
+    text-align: center;
+    border:1px solid darkblue;
+}
+
+a h3 {
+    color:lightcyan;
+    background-image:linear-gradient(blue, orange);
+    padding: 13px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px white;
+    transition: 0.5s;
+}
+
+a h3:hover {
+    background-color: #FFD588;
+    color:cyan;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding:px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:30px;
+}
+
+footer h4 {
+    margin-top: 3px;
+}
+
+/* -------- @Media View Site --------- */
+
+@media (max-width:600px) {
+    h1 {
+        font-size:20px;
+        text-align: center;
+    }
+
+    .h_image img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .about h3 {
+        font-size: 13px;
+        background-color:white;
+        padding: 10px;
+        width: 200px;
+        border-radius:10px
+    }
+
+    .services {
+        display:grid;
+        justify-content: space-evenly;
+    }
+
+    .c1, .c2, .c3, .c4 {
+    border-radius: 20px;
+    width: 30%;
+    font-size: 10px;
+    border-radius: 20px;
+}
+.cc1 {
+    width:500px;
+    display:flex;
+    justify-content:space-arround;
+    background-color:white;
+    margin: 7px;
+}
+
+.cc2 {
+    width: 500px;
+    display:flex;
+    justify-content:space-evenly;
+    background-color:white;
+    margin: 7px;
+}
+}
+    </style>
+    <title>Asmasad Home</title>
+</head>
+<body>
+    <div class="head" style="display:flex; justify-content:space-evenly;">
+
+        <div class="h_image">
+            <img src="images/asmasad.png" >
+        </div>
+        
+        <div class="h_head">
+            <h1>
+                Asmasad Technical Universe
+            </h1>
+        </div>
+        <div class="h_image">
+            <img src="images/asmasad.png" ">
+        </div>
+    </div>
+
+<br>
+
+    <div class="h_body">
+        <center>
+            <div class="about">
+            <h3>
+                We Specialised On The Following Services :
+            </h3>
+            </div>
+        </center>
+    </div>
+
+    <!-- --------------- STARTING POINT OF SERVICES --------------- -->
+
+    <div class="services">
+
+    <div class="cc1">
+        <div class="c1" >
+            <ul>
+                <h3>
+                <li>Invitation Card</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>ID Card</li>
+                </h3>
+            </ul>
+        </div>
+    
+        <div class="c2">
+            <ul>
+                <h3>
+                <li>Data Subscription</li>
+                <li>Airtime Topup</li>
+                <li>Calender</li>
+                <li>Sticker</li>
+                </h3>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cc2" >
+        <div class="c3">
+            <ul>
+                <h3>
+                <li>Solar Installation</li>
+                <li>Graphics Design</li>
+                <li>Printing</li>
+                <li>Jersey</li>
+                </h3>
+            </ul>
+        </div>
+        <div class="c4">
+            <ul>
+                <h3>
+                <li>School Badge</li>
+                <li>Typing</li>
+                <li>Sign Board</li>
+                <li>Banner</li>
+                </h3>
+            </ul>
+        </div>
+</div>
+    </div>
+    <br><hr>
+
+    <div class="acount">
+        <center>
+            <h4>Create an Account or Log in</h4>
+        </center>
+            <div class="a_account">
+            <center>
+                <div class="signup">
+                    <a href="signup.html">
+                        <h3><b style="text-shadow: 1px 1px 2px darkblue;">Sign up</b></h4>
+                    </a>
+                </div>
+
+                    <a href="services.html" style="color:black; padding:3px; border-radius:10px; font-weight:bold; border:2px solid lime; background-color: lime;">Watch for Free</a>
+
+                <div class="login">
+                    <a href="login.html">
+                        <h3><b style="text-shadow: 1px 1px 2px darkblue;">Log in</b></h3>
+                    </a>
+                </div>
+
+            </div>
+    </div>
+
+    <footer>
+        <marquee>
+        <h4>&copy; 2023 Asmasad. All rights reserved. Contact for Help : +234 90-2484-5426, creating good products since 2020 and putting smiles on our customers face, kindly create an Account with us or Login to enjoy much more services and good products</h4>
+        </marquee>
+    </footer>
+
+</body>
+</html>

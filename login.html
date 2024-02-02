@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="loginn.css">
+    <style>
+        body {
+    margin:0px;
+    background-color: lightcyan;
+    font-family:'Trebuchet MS';
+}
+
+.page_title {
+    font-size:20px;
+    width: 100%;
+    background-image:linear-gradient(blue, orange);
+    padding: 1px;
+    color:cyan;
+}
+
+.container {
+    background-color: whitesmoke;
+    width: 400px;
+    padding: 50px;
+    /*border: 3px solid darkblue;*/
+    box-shadow: 0px 0px 10px darkblue;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+label {
+    color:darkblue;
+    font-size: 19px;
+}
+
+#pass, #email {
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 0px 0px 10px darkblue;
+        border-style: none;
+        box-shadow:inset;
+        border-radius: 10px;
+        font-size: 20px;
+        height: 50px;
+        width: 400px;
+        color:darkblue;
+        text-align: center;
+        font-weight:bold;
+    }
+
+    #pass {
+        color:red;
+    }
+
+    
+#email:hover {
+    background-color:lightblue;
+}
+#pass:hover {
+    background-color:lightpink;
+}
+
+
+#sub {
+    height: 52px;
+    width: 400px;    
+    background-image: linear-gradient(blue, orange);
+    color:white;
+    font-size:20px;
+    border-radius:10px
+}
+
+p4 {
+    color:red;
+    font-weight:bold;
+    font-size:17px;
+}
+
+    </style>
+    <title>Asmasad Login</title>
+</head>
+<body>
+    <center>
+        <div class="page_title">
+            <h3>
+                Log in
+            </h3>
+        </div><br><br>
+
+        <h3>welcome back</h3>
+
+    <div class="container">
+        <form action="" method="post">
+            
+            <label for="email">Email</label><br>
+            <input id="email"  type="email" name="email" required><br><br>
+
+            <label for="password" style="color:red;">Password</label><br>
+            <input id="pass" type="password" name="password" required><br><br>
+            
+            <!--<input id="agr" type="checkbox" name="agreed" required>Agree with our
+                <a href="terms.php">Terms </a>and
+                <a href="terms.php">Policy</a><br><br
+                > --> <br>
+            <input id="sub" type="submit" name="sub" value="Login">
+        </form>
+        <h4>
+            Don't have an Account? 
+            <a href="signup.html">Sign Up</a>
+        </h4>
+    </div>
+</body>
+</html>
