@@ -1,3 +1,30 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "", "asma");
+    if (isset($_POST['sub'])) {
+       $name = $_POST['name'];
+       $email = $_POST['email'];
+       $pass1 = $_POST['pass1'];
+       $pass2 = $_POST['pass2'];
+
+        $sql = mysqli_query($conn, "SELECT * FROM sad WHERE email='$email'");
+        $row = mysqli_num_rows($sql);
+
+        if ($_POST['pass1'] != $_POST['pass2']) {
+            $error = "Password Miss-Matched";
+        }
+        else if ($row >= 1) {
+            $error = "User Already Exist";
+        }else {
+            $sql = mysqli_query($conn, "INSERT INTO sad values('$name', '$email', '$pass1');");
+            if ($sql) {
+                header("location:login.php");
+            }
+        }
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,6 +102,20 @@ label {
     border-radius:10px;
     font-weight: bold;
 }
+
+        .error-msg {
+            font-size:16px;
+            width:400px;
+            padding:10px 0px 10px 0px;
+            border-radius:10px;
+            font-weight:bold;
+            display:block;
+            background-color:red;
+            color:white;
+        }
+
+
+        
     </style>
     <title>Asmasad Sign up</title>
 </head>
@@ -87,7 +128,18 @@ label {
         </div>
 
     <div class="container">
-        <form action="" method="post">
+
+            <?php
+            if (isset($error)) {
+                echo '<span class="error-msg">'.$error.'</span>';
+            }else if (isset($success)) {
+                echo '<span class="success">'.$success.'</span>';
+            }
+
+            ?>
+
+        
+        <form action="" method="post">    
         <label for="name">User Name</label><br>
        
             <input id="un"  type="text" name="name" required><br><br>
